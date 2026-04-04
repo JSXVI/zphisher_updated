@@ -1,0 +1,120 @@
+:root {
+  --stm-bg: #171a21;
+  --stm-card: rgba(0, 0, 0, 0.4);
+  --stm-blue: #21a4f1;
+  --stm-text: #afafaf;
+  --stm-bright: #ffffff;
+  --stm-gradient: linear-gradient(to right, #06bfff 0%, #2d73ff 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Motiva Sans", Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: var(--stm-bg);
+  background-image: url('https://store.cloudflare.steamstatic.com/public/shared/images/v6/home/background_main_v7.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-card {
+  background-color: var(--stm-card);
+  width: 100%;
+  max-width: 600px;
+  padding: 30px;
+  border-radius: 4px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 28px;
+  color: var(--stm-bright);
+  font-weight: 300;
+  margin-bottom: 24px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+form {
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+label {
+  display: block;
+  font-size: 11px;
+  color: #1999ff;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+input {
+  width: 100%;
+  background-color: #32353c;
+  border: none;
+  border-radius: 2px;
+  padding: 10px;
+  color: white;
+  font-size: 15px;
+  outline: none;
+}
+
+input:focus {
+  background-color: #3d4149;
+}
+
+.login-btn {
+  background: var(--stm-gradient);
+  color: white;
+  border: none;
+  border-radius: 2px;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: 0.2s;
+}
+
+.login-btn:hover {
+  filter: brightness(1.1);
+}
+
+.footer-nav {
+  margin-top: 40px;
+  font-size: 13px;
+  color: var(--stm-text);
+  text-align: center;
+}
+
+.footer-nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-nav a:hover {
+  text-decoration: underline;
+}
+
+.qr-code {
+    margin-top: 30px;
+    padding-top: 30px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    text-align: center;
+}

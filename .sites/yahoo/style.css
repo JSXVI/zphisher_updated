@@ -1,0 +1,113 @@
+:root {
+  --yh-purple: #6001d2;
+  --yh-blue: #188fff;
+  --yh-bg: #f2f2f2;
+  --yh-text: #26282a;
+  --yh-secondary: #6e7376;
+  --yh-border: rgba(0, 0, 0, 0.15);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Yahoo Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+body {
+  background-color: var(--yh-bg);
+  background-image: url('https://s.yimg.com/rz/p/yahoo_en-US_f_p_bestfit_2x.png');
+  background-size: 150px;
+  background-repeat: no-repeat;
+  background-position: 40px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.login-card {
+  background: white;
+  width: 100%;
+  max-width: 440px;
+  padding: 40px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.08);
+  text-align: center;
+}
+
+.logo {
+  height: 27px;
+  margin-bottom: 24px;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+p.subtitle {
+  font-size: 14px;
+  color: var(--yh-text);
+  margin-bottom: 24px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  text-align: left;
+}
+
+input {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  padding: 10px 0;
+  font-size: 16px;
+  outline: none;
+}
+
+input:focus {
+  border-bottom-color: var(--yh-blue);
+}
+
+.login-btn {
+  background-color: var(--yh-blue);
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 16px;
+}
+
+.login-btn:hover {
+  background-color: #007ceb;
+}
+
+.forgot-link {
+  color: var(--yh-blue);
+  text-decoration: none;
+  font-size: 14px;
+  margin-top: 16px;
+}
+
+.footer-nav {
+  margin-top: 32px;
+  font-size: 12px;
+  color: var(--yh-secondary);
+}
+
+.footer-nav a {
+  text-decoration: none;
+  color: var(--yh-blue);
+}
+
+@media (max-width: 600px) {
+  body { background-image: none; }
+  .login-card { box-shadow: none; border-radius: 0; min-height: 100vh; }
+}

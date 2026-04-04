@@ -1,0 +1,162 @@
+:root {
+  --ms-blue: #0067b8;
+  --ms-bg: #e5e5e5;
+  --ms-text: #1b1b1b;
+  --ms-secondary: #505050;
+  --ms-border: #8c8c8c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+}
+
+body {
+  background-color: var(--ms-bg);
+  background-image: url('https://logincdn.msauth.net/shared/1.0/content/images/backgrounds/2_bc3d32a696895b78c19df6c717586a5d.svg');
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.login-card {
+  background: white;
+  width: 100%;
+  max-width: 440px;
+  padding: 44px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  width: 108px;
+  margin-bottom: 16px;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group {
+  margin-bottom: 12px;
+}
+
+input {
+  width: 100%;
+  padding: 8px 0;
+  border: none;
+  border-bottom: 1px solid var(--ms-border);
+  font-size: 15px;
+  outline: none;
+}
+
+input:focus {
+  border-bottom: 2px solid var(--ms-blue);
+}
+
+.help-text {
+  font-size: 13px;
+  margin-bottom: 20px;
+  color: var(--ms-text);
+}
+
+.help-text a {
+  color: var(--ms-blue);
+  text-decoration: none;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.back-btn {
+  background-color: #cccccc;
+  color: #333;
+  padding: 8px 24px;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.next-btn {
+  background-color: var(--ms-blue);
+  color: white;
+  padding: 6px 32px;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.next-btn:hover {
+  background-color: #005da6;
+}
+
+.options-group {
+  margin-top: 40px;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background: #f2f2f2;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.option img {
+  width: 32px;
+  margin-right: 12px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 10px 40px;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 12px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: var(--ms-secondary);
+  margin-left: 12px;
+}
+
+.identity-banner {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  font-size: 15px;
+  color: var(--ms-text);
+}
+
+.back-arrow {
+  cursor: pointer;
+  margin-right: 8px;
+  color: var(--ms-secondary);
+  border-radius: 50%;
+  padding: 2px;
+}
+
+.back-arrow:hover {
+  background-color: rgba(0,0,0,0.1);
+}
