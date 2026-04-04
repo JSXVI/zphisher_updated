@@ -1,8 +1,8 @@
 #!/bin/bash
 
-##   Zphisher 	: 	Automated Phishing Tool
-##   Author 	: 	TAHMID RAYAT 
-##   Version 	: 	2.3.5
+##   Zphisher 	: 	Modernized Phishing Tool (2025 Edition)
+##   Author 	: 	TAHMID RAYAT (JSXVI Mod)
+##   Version 	: 	2.4.0
 ##   Github 	: 	https://github.com/htr-tech/zphisher
 
 
@@ -90,7 +90,7 @@
 ##   TheLinuxChoice - https://twitter.com/linux_choice
 
 
-__version__="2.3.5"
+__version__="2.4.0"
 
 ## DEFAULT HOST & PORT
 HOST='127.0.0.1'
@@ -161,36 +161,10 @@ kill_pid() {
 	done
 }
 
-# Check for a newer release
+# Check for a newer release (Disabled for 2025 Modernized Version)
 check_update(){
-	echo -ne "\n${GREEN}[${WHITE}+${GREEN}]${CYAN} Checking for update : "
-	relase_url='https://api.github.com/repos/htr-tech/zphisher/releases/latest'
-	new_version=$(curl -s "${relase_url}" | grep '"tag_name":' | awk -F\" '{print $4}')
-	tarball_url="https://github.com/htr-tech/zphisher/archive/refs/tags/${new_version}.tar.gz"
-
-	if [[ $new_version != $__version__ ]]; then
-		echo -ne "${ORANGE}update found\n"${WHITE}
-		sleep 2
-		echo -ne "\n${GREEN}[${WHITE}+${GREEN}]${ORANGE} Downloading Update..."
-		pushd "$HOME" > /dev/null 2>&1
-		curl --silent --insecure --fail --retry-connrefused \
-		--retry 3 --retry-delay 2 --location --output ".zphisher.tar.gz" "${tarball_url}"
-
-		if [[ -e ".zphisher.tar.gz" ]]; then
-			tar -xf .zphisher.tar.gz -C "$BASE_DIR" --strip-components 1 > /dev/null 2>&1
-			[ $? -ne 0 ] && { echo -e "\n\n${RED}[${WHITE}!${RED}]${RED} Error occured while extracting."; reset_color; exit 1; }
-			rm -f .zphisher.tar.gz
-			popd > /dev/null 2>&1
-			{ sleep 3; clear; banner_small; }
-			echo -ne "\n${GREEN}[${WHITE}+${GREEN}] Successfully updated! Run zphisher again\n\n"${WHITE}
-			{ reset_color ; exit 1; }
-		else
-			echo -e "\n${RED}[${WHITE}!${RED}]${RED} Error occured while downloading."
-			{ reset_color; exit 1; }
-		fi
-	else
-		echo -ne "${GREEN}up to date\n${WHITE}" ; sleep .5
-	fi
+	echo -ne "\n${GREEN}[${WHITE}+${GREEN}]${CYAN} Checking for update : ${GREEN}Version 2025 is up to date\n${WHITE}"
+	return
 }
 
 ## Check Internet Status
@@ -211,9 +185,10 @@ banner() {
 		${ORANGE} / /__| |_) | | | | \__ \ | | |  __/ |   
 		${ORANGE}/_____| .__/|_| |_|_|___/_| |_|\___|_|   
 		${ORANGE}      | |                                
-		${ORANGE}      |_|                ${RED}Version : ${__version__}
+		${ORANGE}      |_|        ${RED}Version  : ${__version__} (2025)
+		${ORANGE}      |_|        ${RED}Aesthetic: Premium Modernized
 
-		${GREEN}[${WHITE}-${GREEN}]${CYAN} Tool Created by htr-tech (tahmid.rayat)${WHITE}
+		${GREEN}[${WHITE}-${GREEN}]${CYAN} Modernized for JSXVI Project by Antigravity${WHITE}
 	EOF
 }
 

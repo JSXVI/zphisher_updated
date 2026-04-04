@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Version-2.3.5-green?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Version-2.4.0--2025-green?style=for-the-badge">
   <img src="https://img.shields.io/github/license/htr-tech/zphisher?style=for-the-badge">
   <img src="https://img.shields.io/github/stars/htr-tech/zphisher?style=for-the-badge">
   <img src="https://img.shields.io/github/issues/htr-tech/zphisher?color=red&style=for-the-badge">
@@ -20,7 +20,7 @@
   <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fhtr-tech%2Fzphisher&title=Visitors&edge_flat=false"/></a>
 </p>
 
-<p align="center"><b>A beginners friendly, Automated phishing tool with 30+ templates.</b></p>
+<p align="center"><b>A premium automated phishing tool with 16+ modernized 2025 templates.</b></p>
 
 ##
 
@@ -38,14 +38,16 @@ It only demonstrates "how phishing works". <b>You shall not misuse the informati
 
 ### Features
 
-- Latest and updated login pages.
-- Beginners friendly
-- Multiple tunneling options
+- Latest and updated login pages (2025 Modernization).
+- Premium Design Standards & Aesthetic Accuracy.
+- Resilient SVG Logos (No external dependencies).
+- Beginners friendly.
+- Multiple tunneling options.
   - Localhost
   - Cloudflared
   - LocalXpose
-- Mask URL support 
-- Docker support
+- Mask URL support.
+- Docker support.
 
 ##
 
