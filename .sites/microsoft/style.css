@@ -59,16 +59,32 @@ input {
   border: none;
   border-bottom: 1px solid var(--ms-border);
   font-size: 15px;
+  font-family: inherit;
   outline: none;
+  background: transparent;
 }
 
 input:focus {
   border-bottom: 2px solid var(--ms-blue);
 }
 
+.password-wrapper {
+  margin-top: 16px;
+  padding: 12px 0;
+  border-top: 1px dashed #ccc;
+}
+
+.password-wrapper input {
+  border-bottom-color: #000;
+}
+
+.help-section {
+  margin-top: 12px;
+}
+
 .help-text {
   font-size: 13px;
-  margin-bottom: 20px;
+  margin-bottom: 8px;
   color: var(--ms-text);
 }
 
@@ -77,20 +93,14 @@ input:focus {
   text-decoration: none;
 }
 
+.help-text a:hover {
+  text-decoration: underline;
+}
+
 .btn-group {
   display: flex;
   justify-content: flex-end;
-  gap: 12px;
-  margin-top: 20px;
-}
-
-.back-btn {
-  background-color: #cccccc;
-  color: #333;
-  padding: 8px 24px;
-  border: none;
-  font-size: 15px;
-  cursor: pointer;
+  margin-top: 24px;
 }
 
 .next-btn {
@@ -100,6 +110,7 @@ input:focus {
   border: none;
   font-size: 15px;
   cursor: pointer;
+  font-weight: 600;
 }
 
 .next-btn:hover {
@@ -107,7 +118,7 @@ input:focus {
 }
 
 .options-group {
-  margin-top: 40px;
+  margin-top: 32px;
 }
 
 .option {

